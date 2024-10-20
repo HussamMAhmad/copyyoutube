@@ -1,0 +1,197 @@
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+html {
+  font-size: 10px;
+}
+/* header */
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 56px;
+}
+.header .logo {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.header .logo i {
+  margin-left: 10px;
+  font-size: 25px;
+}
+.header .logo img {
+  width: 46%;
+  padding-left: 16px;
+}
+.header .search {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-left: -9%;
+}
+.header .search input {
+  padding: 10px 100px 10px 10px;
+  width: 300px;
+  border: 1px solid #d3d3d3;
+  border-radius: 2px 0 0 2px;
+  font-size: 1.5rem;
+  border-right: none;
+}
+.header .search input:focus {
+  outline: none;
+}
+.header .search .glass,
+.header .search .microphone {
+  font-size: 16px;
+  color: black;
+  cursor: pointer;
+}
+.header .search .glass {
+  background-color: #f7f7f7;
+  border: 1px solid #d3d3d3;
+  border-radius: 0px 2px 2px 0px;
+  padding: 9px 15px;
+}
+.header .search .glass:hover {
+  border-color: #c6c6c6;
+  background-color: #f0f0f0;
+}
+.header .search .microphone {
+  background-color: #f9f9f9;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-left: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header .info {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+}
+.header .info span {
+  margin-right: 20px;
+  cursor: pointer;
+}
+/* container */
+.container {
+  display: flex;
+  justify-content: flex-start;
+  height: calc(100vh - 56px);
+}
+/* menu */
+.container .menu {
+  width: 280px;
+  padding-right: 10px;
+  overflow-y: auto;
+  height: 100%;
+}
+.container .section1 {
+  border-bottom: 1px solid #c6c6c6;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+.container .section2 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #c6c6c6;
+}
+.container .section1 span,
+.container .section2 span {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding-left: 16px;
+}
+.container .menu span:hover {
+  background-color: #f0f0f0;
+}
+.container .menu p {
+  font-size: 14px;
+  font-weight: bold;
+  margin-left: 20px;
+}
+.container i {
+  font-size: 15px;
+}
+.container .section3 {
+  padding: 10px 10px 10px 0px;
+}
+.container .subtext {
+  width: 100%;
+  font-weight: 400;
+  font-size: 14px;
+  display: block;
+  margin-bottom: 10px;
+}
+.container .section3 .subs {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding-left: 16px;
+}
+.container .section3 .subs:hover {
+  background-color: #f0f0f0;
+}
+.container .section3 img {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+/* vedios */
+.container .vedios {
+  background-color: #f9f9f9;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  box-shadow: #c6c6c6 inset;
+  overflow-y: auto;
+  border-top: 1px solid #ddd;
+}
+.container .vedios .box {
+  margin: 20px 10px ;
+}
+.container .vedios .info{
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 10px;
+}
+.container .title span{
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 4px;
+  max-width: 100%;
+  display: -webkit-box;
+  line-clamp: 2;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.container .title .active,
+.container .title .views{
+  font-size: 12px ;
+  font-weight: 500;
+  color: #333;
+  cursor: pointer;
+  margin: 0px;
+}
+.container .title .active:hover{
+  color: #c6c6c6;
+}
+.container .vedios .box img{
+  width: 100% ;
+  height: 150px ;
+}
+.container .vedios .box .info img{
+  width: 30px ;
+  height: 30px ;
+  border-radius: 50%;
+  margin-right: 10px;
+}
